@@ -1,0 +1,25 @@
+package teste;
+class programa2
+{
+    public static void main(String entrada[])
+    {
+    int mod, div, n1, n2;
+    double raiz, pot;
+    String msg = "";
+
+    n1 = Integer.parseInt(entrada[0]);
+    n2 = Integer.parseInt(entrada[1]);
+    
+    mod = n1 % n2;
+    div = (int)n1/(int)n2;
+    raiz = Math.sqrt(n1);
+    pot = Math.pow(n1, n2);
+
+    msg = "n1 = " + n1 + ", n2 = " + n2 + "\n";
+    msg = msg + "Resto da divisão de n1 por n2 = " + mod + "\n";
+    msg = msg + "Quociente da divisão de n1 por n2 = " + div + "\n";
+    msg = msg  + "Potência de n1 e n2 = " + pot + "\n";
+    System.out.println(msg);
+    System.exit(0) ;   
+    }
+}
